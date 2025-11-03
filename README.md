@@ -1,3 +1,20 @@
+# 🧠 CIFAR-10 Classification using `gemma3:4b` (ai.sooners.us)
+
+---
+
+## 🎯 Goal
+
+Use an OpenAI-compatible API at [https://ai.sooners.us](https://ai.sooners.us) with the **gemma3:4b** model (a Vision-Language Model) to:
+
+- Classify **100 images from CIFAR-10** (10 images from each of the 10 classes)
+- Experiment with different **system prompts** to improve accuracy
+- Plot and save a **confusion matrix** from the results
+
+Each image is sent to the API (as Base64) in a chat-completion request, and the model’s label is parsed from the response.
+
+---
+
+
 ## 1️⃣ Setup Steps
 
 ### 🧩 Environment Setup
