@@ -81,7 +81,6 @@ After classifying 100 images (10 from each of the 10 CIFAR-10 classes), the mode
 | 🟢 Concise Label Only | 63% | Clean, one-word outputs; fast and consistent |
 | 🔵 Explain Then Label | 56% | Slightly better accuracy; reasoning helps identify tricky images |
 
-> Replace **63%** and **56%** with your actual measured accuracies after running the code.
 
 ---
 
