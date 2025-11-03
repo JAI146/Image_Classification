@@ -118,11 +118,11 @@ To ensure the experiment can be replicated exactly:
 ### 🧾 .gitignore Configuration
 
 Ensure your `.gitignore` file includes the following entries to protect sensitive files and reduce repository clutter:
-
+```text
 *.env
 pycache/
 venv/
 data/
 results/
 .ipynb_checkpoints/
-
+```
