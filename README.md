@@ -119,3 +119,10 @@ To ensure the experiment can be replicated exactly:
 
 Ensure your `.gitignore` file includes the following entries to protect sensitive files and reduce repository clutter:
 
+*.env
+pycache/
+venv/
+data/
+results/
+.ipynb_checkpoints/
+
