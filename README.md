@@ -12,7 +12,7 @@ Create a hidden environment file to store your API key and configuration:
 SOONERAI_API_KEY=your_key_here
 SOONERAI_BASE_URL=https://ai.sooners.us
 SOONERAI_MODEL=gemma3:4b
-
+```
 ## 2️⃣ How to Run the Code
 
 ### 🚀 Execution Steps
