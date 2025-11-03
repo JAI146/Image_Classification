@@ -41,3 +41,14 @@ You are a precise image classifier for CIFAR-10.
 Reply with exactly one label from:
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
 ```
+### 🔵 **Prompt 2 – Explain Then Label**
+
+A reasoning-based instruction that asks the model to first describe the image briefly and then provide a final classification label.
+
+**Prompt:**
+```text
+You are an image analyst.
+Describe the image briefly, then on a new line output exactly one label from:
+airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
+The final line must contain only the label.
+```
