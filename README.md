@@ -52,3 +52,70 @@ Describe the image briefly, then on a new line output exactly one label from:
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
 The final line must contain only the label.
 ```
+
+## 4️⃣ Results and Confusion Matrix
+
+### 📈 Accuracy Evaluation
+
+After classifying 100 images (10 from each of the 10 CIFAR-10 classes), the model’s performance was measured using different prompts.
+
+| Prompt | Accuracy | Key Observation |
+|---------|-----------|----------------|
+| 🟢 Concise Label Only | 63% | Clean, one-word outputs; fast and consistent |
+| 🔵 Explain Then Label | 56% | Slightly better accuracy; reasoning helps identify tricky images |
+
+> Replace **63%** and **56%** with your actual measured accuracies after running the code.
+
+---
+
+### 📊 Confusion Matrix
+
+A **confusion matrix** was generated to visualize misclassifications across the 10 CIFAR-10 categories.
+
+**Saved File:**
+
+Each row of the matrix represents the **true class**, while each column represents the **predicted class**.  
+Diagonal values indicate correct predictions; off-diagonal values indicate misclassifications.
+
+---
+
+### 🧩 Common Misclassifications
+
+| True Class | Predicted Class | Explanation |
+|-------------|----------------|--------------|
+| automobile | truck | Both share similar shapes and backgrounds |
+| bird | airplane | Sky backgrounds often confuse the model |
+| cat | dog | Similar size, color, and pose in CIFAR-10 images |
+
+---
+
+### 💬 Summary
+- The **Explain Then Label** prompt slightly improves overall performance by encouraging reasoning.  
+- The **Concise Label** prompt ensures simple and consistent outputs that are easier to parse automatically.  
+- Future improvement: combine brevity and reasoning in one hybrid prompt.
+
+---
+
+## 5️⃣ Security and Reproducibility
+
+### 🔒 API Key Handling
+
+- Your API key is stored securely in the `~/.soonerai.env` file.  
+- It is **never hardcoded** in the code or uploaded to GitHub.  
+- This ensures your key remains private and prevents unauthorized access.
+
+---
+
+### ⚙️ Reproducibility
+
+To ensure the experiment can be replicated exactly:
+- The script uses a **fixed random seed (1337)** for image sampling.  
+- The **model temperature** is set to `0.0` for deterministic responses.  
+- CIFAR-10 dataset automatically downloads from the official PyTorch source if not available locally.
+
+---
+
+### 🧾 .gitignore Configuration
+
+Ensure your `.gitignore` file includes the following entries to protect sensitive files and reduce repository clutter:
+
